@@ -1,4 +1,3 @@
-```css
 * {
     box-sizing: border-box;
 }
@@ -40,27 +39,21 @@ footer {
 
 h1 {
     margin: 0 0 35px;
-
     font-size: 48px;
     font-weight: normal;
-
     color: #39ff14;
-
     text-shadow: 0 0 2px #39ff14;
 }
 
 h2 {
     font-size: 20px;
     font-weight: normal;
-
     color: #39ff14;
-
     text-shadow: 0 0 3px #39ff14;
 }
 
 p {
     color: #39ff14;
-
     text-shadow: 0 0 2px #39ff14;
 }
 
@@ -71,38 +64,27 @@ p {
 
 nav {
     width: 100%;
-
     margin: 0 auto 70px;
     padding: 15px 0;
-
     text-align: center;
-
     border-top: 1px solid #39ff14;
     border-bottom: 1px solid #39ff14;
 }
 
 nav a {
     display: inline-block;
-
     margin: 0 20px;
-
     color: #39ff14;
-
     font-family: "DotGothic16", monospace;
     font-size: 15px;
-
     text-decoration: none;
-
     letter-spacing: 0.1em;
 }
 
 nav a:hover {
     background: #39ff14;
-
     color: #000000;
-
     text-shadow: none;
-
     padding: 2px 8px;
 }
 
@@ -113,68 +95,50 @@ nav a:hover {
 
 .work {
     width: 100%;
-
     text-align: center;
 }
 
 .work img {
     display: block;
-
     width: 70%;
     max-width: 600px;
-
     height: auto;
-
     margin: 30px auto;
 }
 
 .work-image {
     display: block;
-
     width: 400px;
     max-width: 100%;
-
     height: auto;
-
     margin: 30px auto;
 }
 
 .works-category {
     margin-bottom: 80px;
-
     text-align: center;
 }
 
 .works-grid {
     display: flex;
-
     flex-wrap: wrap;
-
     justify-content: center;
-
     gap: 40px;
-
     margin-top: 30px;
 }
 
 .work-card {
     display: block;
-
     width: 280px;
-
     color: #39ff14;
-
     text-decoration: none;
 }
 
 .work-card img {
     display: block;
-
     width: 280px;
     height: 200px;
-
     object-fit: cover;
-
     margin: 0 auto;
 }
 
@@ -188,40 +152,28 @@ nav a:hover {
 
 .work-card:hover p {
     background: #39ff14;
-
     color: #000000;
-
     text-shadow: none;
 }
 
 .x-thumbnail {
     display: flex;
-
     align-items: center;
     justify-content: center;
-
     width: 280px;
     height: 200px;
-
     margin: 0 auto;
-
     border: 1px solid #39ff14;
-
     background: #000000;
-
     color: #39ff14;
-
     font-family: "DotGothic16", monospace;
     font-size: 48px;
-
     text-shadow: 0 0 2px #39ff14;
 }
 
 .work-card:hover .x-thumbnail {
     background: #39ff14;
-
     color: #000000;
-
     text-shadow: none;
 }
 
@@ -232,43 +184,30 @@ nav a:hover {
 
 .read-more {
     display: inline-block;
-
     margin-top: 15px;
-
     color: #39ff14;
-
     font-family: "DotGothic16", monospace;
-
     text-decoration: none;
-
     text-shadow: 0 0 2px #39ff14;
 }
 
 .read-more:hover {
     background: #39ff14;
-
     color: #000000;
-
     padding: 3px 8px;
-
     text-shadow: none;
 }
 
 .contact-link {
     color: #39ff14;
-
     text-decoration: none;
-
     text-shadow: 0 0 2px #39ff14;
 }
 
 .contact-link:hover {
     background: #39ff14;
-
     color: #000000;
-
     padding: 3px 8px;
-
     text-shadow: none;
 }
 
@@ -297,11 +236,8 @@ nav a:hover {
 .news h2,
 .profile h2 {
     font-size: 24px;
-
     font-weight: normal;
-
     color: #39ff14;
-
     text-shadow:
         0 0 3px #39ff14,
         0 0 8px #39ff14;
@@ -312,88 +248,53 @@ nav a:hover {
    恋バナ掲示板
    ================================================== */
 
-
-/* =========================
-   ルール
-   ========================= */
-
 .koibana-rules {
     width: 700px;
     max-width: 100%;
-
     margin: 30px auto 60px;
-
     padding: 20px;
-
     border: 1px solid #39ff14;
-
     text-align: center;
 }
 
 .koibana-rules p {
     margin: 8px 0;
-
     padding: 0;
-
     font-size: 16px;
-
     line-height: 1.8;
-
     text-align: center;
 }
 
-
-/* =========================
-   投稿フォーム
-   ========================= */
-
 .koibana-form {
     width: 100%;
-
     margin-bottom: 80px;
-
     text-align: center;
 }
 
 .koibana-form h2 {
     margin-bottom: 30px;
-
     font-size: 24px;
     font-weight: normal;
-
     color: #39ff14;
 }
 
 .koibana-form p {
     margin: 20px 0 8px;
-
     text-align: center;
 }
-
-
-/* 入力欄 */
 
 .koibana-form input,
 .koibana-form textarea {
     display: block;
-
     width: 600px;
     max-width: 100%;
-
     margin: 0 auto;
-
     padding: 12px;
-
     background: #000000;
-
     color: #39ff14;
-
     border: 1px solid #39ff14;
-
     font-family: "DotGothic16", monospace;
-
     font-size: 16px;
-
     outline: none;
 }
 
@@ -403,7 +304,6 @@ nav a:hover {
 
 .koibana-form textarea {
     min-height: 180px;
-
     resize: vertical;
 }
 
@@ -419,25 +319,17 @@ nav a:hover {
 
 #post-button {
     margin-top: 20px;
-
     padding: 10px 25px;
-
     background: #000000;
-
     color: #39ff14;
-
     border: 1px solid #39ff14;
-
     font-family: "DotGothic16", monospace;
-
     font-size: 16px;
-
     cursor: pointer;
 }
 
 #post-button:hover {
     background: #39ff14;
-
     color: #000000;
 }
 
@@ -448,42 +340,29 @@ nav a:hover {
 
 .koibana-posts {
     width: 100%;
-
     margin-bottom: 80px;
-
     text-align: center;
 }
 
 .koibana-posts h2 {
     margin-bottom: 30px;
-
     font-size: 24px;
     font-weight: normal;
-
     color: #39ff14;
 }
 
 #posts {
     width: 700px;
     max-width: 100%;
-
     margin: 0 auto;
-
     text-align: left;
 }
 
-
-/* 投稿1件 */
-
 #posts article {
     width: 100%;
-
     margin: 0 auto 30px;
-
     padding: 20px;
-
     border: 1px solid #39ff14;
-
     text-align: left;
 }
 
@@ -493,24 +372,21 @@ nav a:hover {
 
 #posts article p:first-child {
     margin: 0 0 5px;
-
     font-size: 16px;
 }
 
 #posts article p:nth-child(2) {
     margin: 0;
-
     font-size: 13px;
 }
 
 #posts article p:nth-child(3) {
     margin: 20px 0 0;
-
     line-height: 1.9;
-
     text-align: left;
-
     white-space: pre-wrap;
+    overflow-wrap: anywhere;
+    word-break: break-word;
 }
 
 #posts hr {
@@ -524,15 +400,15 @@ nav a:hover {
 
 @media (max-width: 600px) {
 
-    /* =========================
-       基本
-       ========================= */
-
+    html,
     body {
         width: 100%;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
 
+    body {
         font-size: 19px;
-
         line-height: 1.8;
     }
 
@@ -545,11 +421,8 @@ nav a:hover {
     main,
     footer {
         width: 100%;
-
         max-width: none;
-
         margin: 0;
-
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -560,13 +433,12 @@ nav a:hover {
        ========================= */
 
     h1 {
+        width: 100%;
         font-size: 40px;
-
-        line-height: 1.4;
-
-        margin-top: 35px;
-
-        margin-bottom: 35px;
+        line-height: 1.35;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        white-space: normal;
     }
 
 
@@ -576,18 +448,18 @@ nav a:hover {
 
     nav {
         width: 100%;
-
-        margin-bottom: 55px;
-
-        padding: 18px 0;
+        margin-top: 0;
+        margin-bottom: 50px;
+        padding: 16px 0;
+        line-height: 2.2;
     }
 
     nav a {
+        display: inline-block;
+        margin: 0 7px;
         font-size: 17px;
-
-        margin: 0 8px;
-
-        letter-spacing: 0.05em;
+        line-height: 2;
+        letter-spacing: 0.03em;
     }
 
 
@@ -597,7 +469,6 @@ nav a:hover {
 
     p {
         font-size: 19px;
-
         line-height: 1.9;
     }
 
@@ -610,29 +481,24 @@ nav a:hover {
     .news,
     .profile {
         width: 100%;
-
-        margin-bottom: 70px;
+        max-width: 100%;
+        margin-bottom: 65px;
     }
 
     .latest-diary h2,
     .news h2,
     .profile h2 {
-        font-size: 25px;
-
+        font-size: 26px;
         line-height: 1.5;
-
-        margin-bottom: 28px;
-
+        margin-bottom: 25px;
         text-shadow: 0 0 2px #39ff14;
     }
 
     .news p,
     .profile p {
         font-size: 19px;
-
         line-height: 1.9;
-
-        margin: 14px 0;
+        margin: 15px 0;
     }
 
 
@@ -642,23 +508,19 @@ nav a:hover {
 
     #latest-diary {
         width: 100%;
-
+        max-width: 100%;
         font-size: 19px;
-
         line-height: 1.9;
     }
 
     #latest-diary h2 {
-        font-size: 19px;
-
+        font-size: 20px;
         font-weight: normal;
-
         text-shadow: 0 0 2px #39ff14;
     }
 
     .read-more {
         font-size: 19px;
-
         margin-top: 20px;
     }
 
@@ -669,44 +531,40 @@ nav a:hover {
 
     .work {
         width: 100%;
+        max-width: 100%;
     }
 
     .work img,
     .work-image {
         display: block;
-
         width: 100%;
-
-        max-width: 600px;
-
+        max-width: 100%;
         height: auto;
-
-        margin-left: auto;
-        margin-right: auto;
+        margin-left: 0;
+        margin-right: 0;
     }
 
     .works-category {
         width: 100%;
+        max-width: 100%;
     }
 
     .works-grid {
         width: 100%;
-
+        max-width: 100%;
         display: flex;
-
         justify-content: center;
+        gap: 30px;
     }
 
     .work-card {
         width: 100%;
-
         max-width: 280px;
     }
 
     .work-card img,
     .x-thumbnail {
         width: 100%;
-
         max-width: 280px;
     }
 
@@ -724,27 +582,44 @@ nav a:hover {
        恋バナ掲示板
        ================================================== */
 
-    .koibana-rules {
+    .koibana-rules,
+    .koibana-form,
+    .koibana-posts,
+    #posts {
         width: 100%;
-
         max-width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
 
-        margin: 25px 0 50px;
 
-        padding: 15px;
+    /* =========================
+       掲示板タイトル
+       ========================= */
 
+    .koibana-form h2,
+    .koibana-posts h2 {
+        font-size: 27px;
+        line-height: 1.5;
+        margin-bottom: 25px;
+    }
+
+
+    /* =========================
+       ルール
+       ========================= */
+
+    .koibana-rules {
+        margin-top: 25px;
+        margin-bottom: 50px;
+        padding: 16px;
         border: 1px solid #39ff14;
-
-        text-align: center;
     }
 
     .koibana-rules p {
         margin: 8px 0;
-
         font-size: 17px;
-
         line-height: 1.8;
-
         text-align: center;
     }
 
@@ -754,38 +629,43 @@ nav a:hover {
        ========================= */
 
     .koibana-form {
-        width: 100%;
-
-        margin-bottom: 60px;
-
-        text-align: center;
+        margin-bottom: 65px;
     }
 
-    .koibana-form h2,
-    .koibana-posts h2 {
-        font-size: 25px;
-
-        margin-bottom: 25px;
+    .koibana-form p {
+        margin-top: 20px;
+        margin-bottom: 8px;
+        font-size: 18px;
+        line-height: 1.8;
     }
+
+
+    /* =========================
+       入力欄
+       ========================= */
 
     .koibana-form input,
     .koibana-form textarea {
+        display: block;
         width: 100%;
-
         max-width: 100%;
-
         margin-left: 0;
         margin-right: 0;
-
+        padding: 13px;
+        background: #000000;
+        color: #39ff14;
+        border: 1px solid #39ff14;
+        font-family: "DotGothic16", monospace;
         font-size: 18px;
+        outline: none;
     }
 
     .koibana-form input {
-        height: 48px;
+        height: 50px;
     }
 
     .koibana-form textarea {
-        min-height: 180px;
+        min-height: 190px;
     }
 
 
@@ -794,11 +674,16 @@ nav a:hover {
        ========================= */
 
     #post-button {
+        display: block;
         width: 100%;
-
-        padding: 13px;
-
-        font-size: 18px;
+        margin-top: 20px;
+        padding: 14px;
+        background: #000000;
+        color: #39ff14;
+        border: 1px solid #39ff14;
+        font-family: "DotGothic16", monospace;
+        font-size: 19px;
+        cursor: pointer;
     }
 
 
@@ -808,49 +693,44 @@ nav a:hover {
 
     #posts {
         width: 100%;
-
         max-width: 100%;
-
         margin-left: 0;
         margin-right: 0;
     }
 
     #posts article {
         width: 100%;
-
-        margin-bottom: 25px;
-
+        max-width: 100%;
+        margin: 0 0 25px;
         padding: 18px;
-
         border: 1px solid #39ff14;
-
         text-align: left;
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
     #posts article p:first-child {
+        margin: 0 0 5px;
         font-size: 17px;
-
+        line-height: 1.7;
         text-align: left;
     }
 
     #posts article p:nth-child(2) {
+        margin: 0;
         font-size: 13px;
-
+        line-height: 1.6;
         text-align: left;
     }
 
     #posts article p:nth-child(3) {
         margin-top: 15px;
-
         font-size: 18px;
-
         line-height: 1.9;
-
         text-align: left;
-
+        white-space: pre-wrap;
         overflow-wrap: anywhere;
         word-break: break-word;
     }
 
 }
-```
