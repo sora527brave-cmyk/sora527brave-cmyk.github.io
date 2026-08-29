@@ -214,3 +214,91 @@ nav a:hover {
         0 0 8px #39ff14;
 }
 
+/* =========================
+   スマホ表示
+   ========================= */
+
+@media (max-width: 600px) {
+
+    body {
+        font-size: 18px;
+        line-height: 1.8;
+    }
+
+    header,
+    main,
+    footer {
+        width: 100%;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    /* 名前 */
+    h1 {
+        font-size: 40px;
+        line-height: 1.4;
+        margin-top: 35px;
+        margin-bottom: 35px;
+    }
+
+    /* ナビ */
+    nav {
+        margin-bottom: 55px;
+        padding: 18px 0;
+    }
+
+    nav a {
+        font-size: 17px;
+        margin: 0 9px;
+        letter-spacing: 0.05em;
+    }
+
+    /* セクション */
+    .latest-diary,
+    .news,
+    .profile {
+        margin-bottom: 70px;
+    }
+
+    /* 見出し */
+    .latest-diary h2,
+    .news h2,
+    .profile h2 {
+        font-size: 25px;
+        line-height: 1.5;
+        margin-bottom: 28px;
+        text-shadow: 0 0 2px #39ff14;
+    }
+
+    /* 本文 */
+    p {
+        font-size: 18px;
+        line-height: 1.9;
+    }
+
+    .news p,
+    .profile p {
+        font-size: 18px;
+        line-height: 1.9;
+        margin: 14px 0;
+    }
+
+    /* 日記 */
+    #latest-diary {
+        font-size: 18px;
+        line-height: 1.9;
+    }
+
+    #latest-diary h2 {
+        font-size: 18px;
+        font-weight: normal;
+        text-shadow: 0 0 2px #39ff14;
+    }
+
+    /* 続きを読む */
+    .read-more {
+        font-size: 18px;
+        margin-top: 20px;
+    }
+
+}
