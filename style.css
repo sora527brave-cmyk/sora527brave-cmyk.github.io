@@ -249,11 +249,6 @@ nav a:hover {
    恋バナ掲示板
    ================================================== */
 
-
-/* =========================
-   ルール
-   ========================= */
-
 .koibana-rules {
     width: 700px;
     max-width: 100%;
@@ -270,11 +265,6 @@ nav a:hover {
     line-height: 1.8;
     text-align: center;
 }
-
-
-/* =========================
-   投稿フォーム
-   ========================= */
 
 .koibana-form {
     width: 100%;
@@ -293,11 +283,6 @@ nav a:hover {
     margin: 20px 0 8px;
     text-align: center;
 }
-
-
-/* =========================
-   入力欄
-   ========================= */
 
 .koibana-form input,
 .koibana-form textarea {
@@ -374,11 +359,6 @@ nav a:hover {
     text-align: left;
 }
 
-
-/* =========================
-   投稿1件
-   ========================= */
-
 #posts article {
     width: 100%;
     margin: 0 auto 30px;
@@ -416,19 +396,16 @@ nav a:hover {
 
 
 /* ==================================================
-   スマホ表示
+   スマホ
    ================================================== */
 
 @media (max-width: 600px) {
 
-    /* =========================
-       基本
-       ========================= */
-
     html,
     body {
         width: 100%;
-        max-width: 100%;
+        margin: 0;
+        padding: 0;
         overflow-x: hidden;
     }
 
@@ -438,10 +415,9 @@ nav a:hover {
     }
 
 
-    /* ==================================================
+    /* =========================
        ページ全体
-       恋バナ掲示板と完全に同じ幅
-       ================================================== */
+       ========================= */
 
     header,
     main,
@@ -457,33 +433,17 @@ nav a:hover {
 
 
     /* =========================
-       すべての主要コンテンツを
-       掲示板と同じ幅にする
-       ========================= */
-
-    main > *,
-    main section,
-    main article,
-    main div {
-        max-width: 100%;
-    }
-
-
-    /* =========================
        タイトル
        ========================= */
 
     h1 {
         width: 100%;
-        max-width: 100%;
 
         margin-top: 30px;
         margin-bottom: 30px;
 
         font-size: 40px;
-        line-height: 1.35;
-
-        white-space: normal;
+        line-height: 1.4;
     }
 
 
@@ -493,9 +453,7 @@ nav a:hover {
 
     nav {
         width: 100%;
-        max-width: 100%;
 
-        margin-top: 0;
         margin-bottom: 50px;
 
         padding: 16px 0;
@@ -504,24 +462,12 @@ nav a:hover {
     }
 
     nav a {
-        display: inline-block;
-
         margin: 0 7px;
 
         font-size: 17px;
         line-height: 2;
 
         letter-spacing: 0.03em;
-    }
-
-
-    /* ==================================================
-       本文
-       ================================================== */
-
-    p {
-        font-size: 19px;
-        line-height: 1.9;
     }
 
 
@@ -535,21 +481,19 @@ nav a:hover {
         display: block;
 
         width: 100%;
-        max-width: 100%;
+        max-width: none;
 
         margin-left: 0;
         margin-right: 0;
-
-        margin-bottom: 65px;
     }
+
 
     .latest-diary h2,
     .news h2,
     .profile h2 {
         width: 100%;
-        max-width: 100%;
 
-        font-size: 26px;
+        font-size: 27px;
         line-height: 1.5;
 
         margin-bottom: 25px;
@@ -557,27 +501,11 @@ nav a:hover {
         text-shadow: 0 0 2px #39ff14;
     }
 
+
+    .latest-diary p,
     .news p,
     .profile p {
         width: 100%;
-        max-width: 100%;
-
-        font-size: 19px;
-        line-height: 1.9;
-
-        margin: 15px 0;
-    }
-
-
-    /* ==================================================
-       日記
-       ================================================== */
-
-    #latest-diary {
-        display: block;
-
-        width: 100%;
-        max-width: 100%;
 
         margin-left: 0;
         margin-right: 0;
@@ -586,14 +514,24 @@ nav a:hover {
         line-height: 1.9;
     }
 
-    #latest-diary h2 {
+
+    /* =========================
+       最新日記
+       ========================= */
+
+    #latest-diary {
         width: 100%;
-        max-width: 100%;
+        max-width: none;
 
+        font-size: 19px;
+        line-height: 1.9;
+
+        overflow-wrap: anywhere;
+        word-break: break-word;
+    }
+
+    #latest-diary h2 {
         font-size: 20px;
-        font-weight: normal;
-
-        text-shadow: 0 0 2px #39ff14;
     }
 
     .read-more {
@@ -603,81 +541,38 @@ nav a:hover {
 
 
     /* ==================================================
-       作品ページ
+       作品
        ================================================== */
 
-    .work {
-        display: block;
-
+    .work,
+    .works-category,
+    .works-grid,
+    .work-card {
         width: 100%;
-        max-width: 100%;
+        max-width: none;
 
         margin-left: 0;
         margin-right: 0;
-
-        text-align: center;
     }
 
     .work img,
     .work-image {
-        display: block;
-
         width: 100%;
         max-width: 100%;
-
         height: auto;
-
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .works-category {
-        display: block;
-
-        width: 100%;
-        max-width: 100%;
 
         margin-left: 0;
         margin-right: 0;
     }
 
     .works-grid {
-        display: flex;
-
-        width: 100%;
-        max-width: 100%;
-
-        justify-content: center;
-
         gap: 30px;
-
-        margin-left: 0;
-        margin-right: 0;
-    }
-
-    .work-card {
-        width: 100%;
-        max-width: 100%;
-
-        margin-left: 0;
-        margin-right: 0;
     }
 
     .work-card img,
     .x-thumbnail {
         width: 100%;
         max-width: 100%;
-    }
-
-    .work-card img {
-        height: auto;
-        aspect-ratio: 280 / 200;
-        object-fit: cover;
-    }
-
-    .x-thumbnail {
-        height: auto;
-        min-height: 200px;
     }
 
 
@@ -699,21 +594,31 @@ nav a:hover {
     .koibana-posts,
     #posts {
         width: 100%;
-        max-width: 100%;
+        max-width: none;
 
         margin-left: 0;
         margin-right: 0;
     }
 
+    .koibana-rules {
+        margin-top: 25px;
+        margin-bottom: 50px;
 
-    /* =========================
-       掲示板タイトル
-       ========================= */
+        padding: 16px;
+    }
+
+    .koibana-rules p {
+        font-size: 17px;
+        line-height: 1.8;
+    }
+
+    .koibana-form {
+        margin-bottom: 65px;
+    }
 
     .koibana-form h2,
     .koibana-posts h2 {
         width: 100%;
-        max-width: 100%;
 
         font-size: 27px;
         line-height: 1.5;
@@ -721,74 +626,20 @@ nav a:hover {
         margin-bottom: 25px;
     }
 
-
-    /* =========================
-       ルール
-       ========================= */
-
-    .koibana-rules {
-        margin-top: 25px;
-        margin-bottom: 50px;
-
-        padding: 16px;
-
-        border: 1px solid #39ff14;
-    }
-
-    .koibana-rules p {
-        margin: 8px 0;
-
-        font-size: 17px;
-        line-height: 1.8;
-
-        text-align: center;
-    }
-
-
-    /* =========================
-       投稿フォーム
-       ========================= */
-
-    .koibana-form {
-        margin-bottom: 65px;
-    }
-
     .koibana-form p {
-        margin-top: 20px;
-        margin-bottom: 8px;
-
         font-size: 18px;
         line-height: 1.8;
     }
 
-
-    /* =========================
-       入力欄
-       ========================= */
-
     .koibana-form input,
     .koibana-form textarea {
-        display: block;
-
         width: 100%;
         max-width: 100%;
 
         margin-left: 0;
         margin-right: 0;
 
-        padding: 13px;
-
-        background: #000000;
-
-        color: #39ff14;
-
-        border: 1px solid #39ff14;
-
-        font-family: "DotGothic16", monospace;
-
         font-size: 18px;
-
-        outline: none;
     }
 
     .koibana-form input {
@@ -799,97 +650,40 @@ nav a:hover {
         min-height: 190px;
     }
 
-
-    /* =========================
-       投稿ボタン
-       ========================= */
-
     #post-button {
-        display: block;
-
         width: 100%;
-
-        margin-top: 20px;
 
         padding: 14px;
 
-        background: #000000;
-
-        color: #39ff14;
-
-        border: 1px solid #39ff14;
-
-        font-family: "DotGothic16", monospace;
-
         font-size: 19px;
-
-        cursor: pointer;
-    }
-
-
-    /* =========================
-       投稿一覧
-       ========================= */
-
-    #posts {
-        width: 100%;
-        max-width: 100%;
-
-        margin-left: 0;
-        margin-right: 0;
     }
 
     #posts article {
         width: 100%;
         max-width: 100%;
 
-        margin: 0 0 25px;
-
         padding: 18px;
-
-        border: 1px solid #39ff14;
-
-        text-align: left;
 
         overflow-wrap: anywhere;
         word-break: break-word;
     }
 
     #posts article p:first-child {
-        margin: 0 0 5px;
-
         font-size: 17px;
-        line-height: 1.7;
-
-        text-align: left;
     }
 
     #posts article p:nth-child(2) {
-        margin: 0;
-
         font-size: 13px;
-        line-height: 1.6;
-
-        text-align: left;
     }
 
     #posts article p:nth-child(3) {
-        margin-top: 15px;
-
         font-size: 18px;
         line-height: 1.9;
-
-        text-align: left;
-
-        white-space: pre-wrap;
-
-        overflow-wrap: anywhere;
-        word-break: break-word;
     }
 
 
     /* ==================================================
-       スマホでの画像・動画など
+       スマホでのはみ出し防止
        ================================================== */
 
     img,
@@ -897,11 +691,6 @@ nav a:hover {
     iframe {
         max-width: 100%;
     }
-
-
-    /* ==================================================
-       スマホでの長い文字のはみ出し防止
-       ================================================== */
 
     p,
     h1,
