@@ -531,7 +531,7 @@ nav a:hover {
     body {
         width: 100%;
 
-        font-size: 18px;
+        font-size: 19px;
 
         line-height: 1.8;
     }
@@ -539,9 +539,6 @@ nav a:hover {
 
     /* =========================
        ページ全体
-       
-       恋バナ掲示板と同じく
-       スマホ画面を広く使う
        ========================= */
 
     header,
@@ -553,8 +550,8 @@ nav a:hover {
 
         margin: 0;
 
-        padding-left: 22px;
-        padding-right: 22px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
 
 
@@ -588,7 +585,7 @@ nav a:hover {
     nav a {
         font-size: 17px;
 
-        margin: 0 9px;
+        margin: 0 8px;
 
         letter-spacing: 0.05em;
     }
@@ -599,7 +596,7 @@ nav a:hover {
        ========================= */
 
     p {
-        font-size: 18px;
+        font-size: 19px;
 
         line-height: 1.9;
     }
@@ -631,7 +628,7 @@ nav a:hover {
 
     .news p,
     .profile p {
-        font-size: 18px;
+        font-size: 19px;
 
         line-height: 1.9;
 
@@ -646,13 +643,13 @@ nav a:hover {
     #latest-diary {
         width: 100%;
 
-        font-size: 18px;
+        font-size: 19px;
 
         line-height: 1.9;
     }
 
     #latest-diary h2 {
-        font-size: 18px;
+        font-size: 19px;
 
         font-weight: normal;
 
@@ -660,7 +657,7 @@ nav a:hover {
     }
 
     .read-more {
-        font-size: 18px;
+        font-size: 19px;
 
         margin-top: 20px;
     }
@@ -719,7 +716,7 @@ nav a:hover {
        ========================= */
 
     .contact-link {
-        font-size: 18px;
+        font-size: 19px;
     }
 
 
@@ -732,7 +729,7 @@ nav a:hover {
 
         max-width: 100%;
 
-        margin: 25px auto 50px;
+        margin: 25px 0 50px;
 
         padding: 15px;
 
@@ -744,7 +741,7 @@ nav a:hover {
     .koibana-rules p {
         margin: 8px 0;
 
-        font-size: 16px;
+        font-size: 17px;
 
         line-height: 1.8;
 
@@ -777,11 +774,18 @@ nav a:hover {
 
         max-width: 100%;
 
-        font-size: 17px;
+        margin-left: 0;
+        margin-right: 0;
+
+        font-size: 18px;
+    }
+
+    .koibana-form input {
+        height: 48px;
     }
 
     .koibana-form textarea {
-        min-height: 160px;
+        min-height: 180px;
     }
 
 
@@ -792,9 +796,9 @@ nav a:hover {
     #post-button {
         width: 100%;
 
-        padding: 12px;
+        padding: 13px;
 
-        font-size: 17px;
+        font-size: 18px;
     }
 
 
@@ -806,6 +810,9 @@ nav a:hover {
         width: 100%;
 
         max-width: 100%;
+
+        margin-left: 0;
+        margin-right: 0;
     }
 
     #posts article {
@@ -821,13 +828,13 @@ nav a:hover {
     }
 
     #posts article p:first-child {
-        font-size: 16px;
+        font-size: 17px;
 
         text-align: left;
     }
 
     #posts article p:nth-child(2) {
-        font-size: 12px;
+        font-size: 13px;
 
         text-align: left;
     }
@@ -835,11 +842,14 @@ nav a:hover {
     #posts article p:nth-child(3) {
         margin-top: 15px;
 
-        font-size: 17px;
+        font-size: 18px;
 
         line-height: 1.9;
 
         text-align: left;
+
+        overflow-wrap: anywhere;
+        word-break: break-word;
     }
 
 }
