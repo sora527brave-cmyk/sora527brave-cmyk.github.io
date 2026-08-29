@@ -17,6 +17,11 @@ body {
     text-align: center;
 }
 
+
+/* =========================
+   全体
+   ========================= */
+
 header,
 main,
 footer {
@@ -27,111 +32,148 @@ footer {
     padding-right: 30px;
 }
 
+
+/* =========================
+   見出し
+   ========================= */
+
 h1 {
+    margin: 0 0 35px;
+
     font-size: 48px;
     font-weight: normal;
+
     color: #39ff14;
+
     text-shadow: 0 0 2px #39ff14;
 }
 
 h2 {
     font-size: 20px;
     font-weight: normal;
+
     color: #39ff14;
+
     text-shadow: 0 0 3px #39ff14;
 }
 
 p {
     color: #39ff14;
+
     text-shadow: 0 0 2px #39ff14;
 }
 
-.work {
-    width: 100%;
-    text-align: center;
-}
 
-.work img {
-    display: block;
-    width: 70%;
-    max-width: 600px;
-    height: auto;
-    margin: 30px auto;
-}
-.work-image {
-    width: 400px;
-    max-width: 100%;
-    height: auto;
-    display: block;
-    margin: 30px auto;
-}
+/* =========================
+   ナビ
+   ========================= */
+
 nav {
     width: 100%;
+
     margin: 0 auto 70px;
     padding: 15px 0;
+
     text-align: center;
+
     border-top: 1px solid #39ff14;
     border-bottom: 1px solid #39ff14;
 }
 
 nav a {
     display: inline-block;
+
     margin: 0 20px;
+
     color: #39ff14;
+
     font-family: "DotGothic16", monospace;
     font-size: 15px;
+
     text-decoration: none;
+
     letter-spacing: 0.1em;
 }
 
 nav a:hover {
     background: #39ff14;
+
     color: #000000;
+
     text-shadow: none;
+
     padding: 2px 8px;
 }
 
-.read-more {
-    display: inline-block;
-    margin-top: 15px;
-    color: #39ff14;
-    font-family: "DotGothic16", monospace;
-    text-decoration: none;
-    text-shadow: 0 0 2px #39ff14;
+
+/* =========================
+   作品
+   ========================= */
+
+.work {
+    width: 100%;
+
+    text-align: center;
 }
 
-.read-more:hover {
-    background: #39ff14;
-    color: #000000;
-    padding: 3px 8px;
-    text-shadow: none;
+.work img {
+    display: block;
+
+    width: 70%;
+    max-width: 600px;
+
+    height: auto;
+
+    margin: 30px auto;
+}
+
+.work-image {
+    display: block;
+
+    width: 400px;
+    max-width: 100%;
+
+    height: auto;
+
+    margin: 30px auto;
 }
 
 .works-category {
     margin-bottom: 80px;
+
     text-align: center;
 }
 
 .works-grid {
     display: flex;
+
     flex-wrap: wrap;
+
     justify-content: center;
+
     gap: 40px;
+
     margin-top: 30px;
 }
 
 .work-card {
     display: block;
+
     width: 280px;
+
     color: #39ff14;
+
     text-decoration: none;
 }
 
 .work-card img {
+    display: block;
+
     width: 280px;
     height: 200px;
+
     object-fit: cover;
-    display: block;
+
     margin: 0 auto;
 }
 
@@ -145,47 +187,94 @@ nav a:hover {
 
 .work-card:hover p {
     background: #39ff14;
+
     color: #000000;
+
     text-shadow: none;
 }
 
 .x-thumbnail {
-    width: 280px;
-    height: 200px;
-    margin: 0 auto;
-    border: 1px solid #39ff14;
-
     display: flex;
+
     align-items: center;
     justify-content: center;
 
-    color: #39ff14;
-    font-family: "DotGothic16", monospace;
-    font-size: 48px;
+    width: 280px;
+    height: 200px;
+
+    margin: 0 auto;
+
+    border: 1px solid #39ff14;
 
     background: #000000;
+
+    color: #39ff14;
+
+    font-family: "DotGothic16", monospace;
+    font-size: 48px;
 
     text-shadow: 0 0 2px #39ff14;
 }
 
 .work-card:hover .x-thumbnail {
     background: #39ff14;
+
     color: #000000;
+
+    text-shadow: none;
+}
+
+
+/* =========================
+   リンク
+   ========================= */
+
+.read-more {
+    display: inline-block;
+
+    margin-top: 15px;
+
+    color: #39ff14;
+
+    font-family: "DotGothic16", monospace;
+
+    text-decoration: none;
+
+    text-shadow: 0 0 2px #39ff14;
+}
+
+.read-more:hover {
+    background: #39ff14;
+
+    color: #000000;
+
+    padding: 3px 8px;
+
     text-shadow: none;
 }
 
 .contact-link {
     color: #39ff14;
+
     text-decoration: none;
+
     text-shadow: 0 0 2px #39ff14;
 }
 
 .contact-link:hover {
     background: #39ff14;
+
     color: #000000;
-    text-shadow: none;
+
     padding: 3px 8px;
+
+    text-shadow: none;
 }
+
+
+/* =========================
+   HOME
+   ========================= */
 
 .latest-diary,
 .news,
@@ -207,98 +296,519 @@ nav a:hover {
 .news h2,
 .profile h2 {
     font-size: 24px;
+
     font-weight: normal;
+
     color: #39ff14;
+
     text-shadow:
         0 0 3px #39ff14,
         0 0 8px #39ff14;
 }
 
+
+/* ==================================================
+   恋バナ掲示板
+   ================================================== */
+
+
 /* =========================
-   スマホ表示
+   ルール
    ========================= */
+
+/*
+   重要：
+   ルールの「文章」は左揃え。
+   
+   ルール全体の幅は700px。
+   
+   700pxの箱そのものを
+   ページ中央に配置することで、
+   
+   「恋バナ掲示板」の中央位置と
+   ルールの中央位置を揃える。
+*/
+
+.koibana-rules {
+    width: 700px;
+    max-width: 100%;
+
+    margin: 0 auto 60px;
+
+    padding: 0;
+
+    text-align: left;
+}
+
+.koibana-rules p {
+    margin: 5px 0;
+
+    padding: 0;
+
+    text-align: left;
+
+    line-height: 1.8;
+}
+
+
+/* =========================
+   投稿フォーム
+   ========================= */
+
+.koibana-form {
+    width: 100%;
+
+    margin-bottom: 80px;
+
+    text-align: center;
+}
+
+.koibana-form h2 {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    font-weight: normal;
+
+    color: #39ff14;
+}
+
+.koibana-form p {
+    margin: 20px 0 8px;
+
+    text-align: center;
+}
+
+
+/* 入力欄 */
+
+.koibana-form input,
+.koibana-form textarea {
+    display: block;
+
+    width: 600px;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    padding: 12px;
+
+    background: #000000;
+
+    color: #39ff14;
+
+    border: 1px solid #39ff14;
+
+    font-family: "DotGothic16", monospace;
+
+    font-size: 16px;
+
+    outline: none;
+}
+
+.koibana-form input {
+    height: 45px;
+}
+
+.koibana-form textarea {
+    min-height: 180px;
+
+    resize: vertical;
+}
+
+.koibana-form input:focus,
+.koibana-form textarea:focus {
+    background: #050505;
+}
+
+
+/* =========================
+   投稿ボタン
+   ========================= */
+
+#post-button {
+    margin-top: 20px;
+
+    padding: 10px 25px;
+
+    background: #000000;
+
+    color: #39ff14;
+
+    border: 1px solid #39ff14;
+
+    font-family: "DotGothic16", monospace;
+
+    font-size: 16px;
+
+    cursor: pointer;
+}
+
+#post-button:hover {
+    background: #39ff14;
+
+    color: #000000;
+}
+
+
+/* =========================
+   投稿一覧
+   ========================= */
+
+.koibana-posts {
+    width: 100%;
+
+    margin-bottom: 80px;
+
+    text-align: center;
+}
+
+.koibana-posts h2 {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    font-weight: normal;
+
+    color: #39ff14;
+}
+
+
+/* 投稿全体 */
+
+#posts {
+    width: 700px;
+    max-width: 100%;
+
+    margin: 0 auto;
+
+    text-align: left;
+}
+
+
+/* =========================
+   投稿1件
+   ========================= */
+
+#posts article {
+    width: 100%;
+
+    margin: 0 auto 30px;
+
+    padding: 20px;
+
+    border: 1px solid #39ff14;
+
+    text-align: left;
+}
+
+
+/* 投稿内の文章 */
+
+#posts article p {
+    text-align: left;
+}
+
+
+/* 名前 */
+
+#posts article p:first-child {
+    margin: 0 0 5px;
+
+    font-size: 16px;
+}
+
+
+/* 日付 */
+
+#posts article p:nth-child(2) {
+    margin: 0;
+
+    font-size: 13px;
+}
+
+
+/* 本文 */
+
+#posts article p:nth-child(3) {
+    margin: 20px 0 0;
+
+    line-height: 1.9;
+
+    text-align: left;
+
+    white-space: pre-wrap;
+}
+
+
+/* 元の区切り線は表示しない */
+
+#posts hr {
+    display: none;
+}
+
+
+/* ==================================================
+   スマホ
+   ================================================== */
 
 @media (max-width: 600px) {
 
     body {
         font-size: 18px;
+
         line-height: 1.8;
     }
+
+
+    /* =========================
+       全体
+       ========================= */
 
     header,
     main,
     footer {
         width: 100%;
+
         padding-left: 22px;
         padding-right: 22px;
     }
 
-    /* 名前 */
+
+    /* =========================
+       タイトル
+       ========================= */
+
     h1 {
         font-size: 40px;
+
         line-height: 1.4;
+
         margin-top: 35px;
+
         margin-bottom: 35px;
     }
 
-    /* ナビ */
+
+    /* =========================
+       ナビ
+       ========================= */
+
     nav {
         margin-bottom: 55px;
+
         padding: 18px 0;
     }
 
     nav a {
         font-size: 17px;
+
         margin: 0 9px;
+
         letter-spacing: 0.05em;
     }
 
-    /* セクション */
+
+    /* =========================
+       HOME
+       ========================= */
+
     .latest-diary,
     .news,
     .profile {
         margin-bottom: 70px;
     }
 
-    /* 見出し */
     .latest-diary h2,
     .news h2,
     .profile h2 {
         font-size: 25px;
+
         line-height: 1.5;
+
         margin-bottom: 28px;
+
         text-shadow: 0 0 2px #39ff14;
     }
 
-    /* 本文 */
     p {
         font-size: 18px;
+
         line-height: 1.9;
     }
 
     .news p,
     .profile p {
         font-size: 18px;
+
         line-height: 1.9;
+
         margin: 14px 0;
     }
 
-    /* 日記 */
-    #latest-diary {
-        font-size: 18px;
+
+    /* =========================
+       恋バナ・ルール
+       ========================= */
+
+    .koibana-rules {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 0 auto 50px;
+
+        padding: 0;
+
+        text-align: left;
+    }
+
+    .koibana-rules p {
+        margin: 5px 0;
+
+        font-size: 16px;
+
+        line-height: 1.8;
+
+        text-align: left;
+    }
+
+
+    /* =========================
+       投稿フォーム
+       ========================= */
+
+    .koibana-form {
+        margin-bottom: 60px;
+
+        text-align: center;
+    }
+
+    .koibana-form h2,
+    .koibana-posts h2 {
+        font-size: 25px;
+
+        margin-bottom: 25px;
+    }
+
+    .koibana-form input,
+    .koibana-form textarea {
+        width: 100%;
+        max-width: 100%;
+
+        font-size: 17px;
+    }
+
+    .koibana-form textarea {
+        min-height: 160px;
+    }
+
+
+    /* =========================
+       ボタン
+       ========================= */
+
+    #post-button {
+        width: 100%;
+
+        padding: 12px;
+
+        font-size: 17px;
+    }
+
+
+    /* =========================
+       投稿一覧
+       ========================= */
+
+    #posts {
+        width: 100%;
+
+        max-width: 100%;
+    }
+
+
+    /* =========================
+       投稿ポスト
+       ========================= */
+
+    #posts article {
+        width: 100%;
+
+        margin-bottom: 25px;
+
+        padding: 18px;
+
+        border: 1px solid #39ff14;
+
+        text-align: left;
+    }
+
+    #posts article p:first-child {
+        font-size: 16px;
+
+        text-align: left;
+    }
+
+    #posts article p:nth-child(2) {
+        font-size: 12px;
+
+        text-align: left;
+    }
+
+    #posts article p:nth-child(3) {
+        margin-top: 15px;
+
+        font-size: 17px;
+
         line-height: 1.9;
+
+        text-align: left;
     }
 
-    #latest-diary h2 {
-        font-size: 18px;
-        font-weight: normal;
-        text-shadow: 0 0 2px #39ff14;
+}
+
+/* =========================
+   恋バナ・ルール
+   ========================= */
+
+.koibana-rules {
+    width: 700px;
+    max-width: 100%;
+
+    margin: 30px auto 60px;
+    padding: 20px;
+
+    border: 1px solid #39ff14;
+
+    text-align: center;
+}
+
+.koibana-rules p {
+    margin: 8px 0;
+
+    text-align: center;
+
+    line-height: 1.8;
+}
+
+
+/* スマホ */
+
+@media (max-width: 600px) {
+
+    .koibana-rules {
+        width: 100%;
+        max-width: 100%;
+
+        margin: 25px auto 50px;
+        padding: 15px;
+
+        text-align: center;
     }
 
-    /* 続きを読む */
-    .read-more {
-        font-size: 18px;
-        margin-top: 20px;
+    .koibana-rules p {
+        font-size: 16px;
+        line-height: 1.8;
+
+        text-align: center;
     }
 
 }

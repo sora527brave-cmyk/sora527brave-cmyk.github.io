@@ -4,7 +4,9 @@
 <head>
     <meta charset="UTF-8">
 
-    <title>恋バナ掲示板</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Haut bas fragile</title>
 
     <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
 
@@ -12,6 +14,12 @@
 </head>
 
 <body>
+
+    <!-- ナビゲーション -->
+
+     <header>
+        <h1>Haut bas fragile</h1>
+    </header>
 
     <nav>
         <a href="index.html">HOME</a>
@@ -21,11 +29,40 @@
         <a href="contact.html">CONTACT</a>
     </nav>
 
+
+    <!-- タイトル -->
+
     <header>
         <h1>恋バナ掲示板</h1>
     </header>
 
+
+    <!-- メイン -->
+
     <main>
+
+        <!-- ルール -->
+
+        <section class="koibana-rules">
+
+            <p>・ここは恋バナを自由に書き込む掲示板です。</p>
+
+            <p>・名前はこのサイトだけのものにしてください。</p>
+
+            <p>思いつかなければ「匿名」で構いません。</p>
+
+            <p>・誰かの名前を書くときはランダムなイニシャルや、</p>
+
+            <p>代名詞などで特定されないようにしてください。</p>
+
+            <p>・攻撃的、加害的、過度に性的な表現は控え、</p>
+
+            <p>見た人が気分を害さないように気を付けてください。</p>
+
+        </section>
+
+
+        <!-- 投稿フォーム -->
 
         <section class="koibana-form">
 
@@ -55,6 +92,8 @@
         </section>
 
 
+        <!-- 投稿一覧 -->
+
         <section class="koibana-posts">
 
             <h2>POSTS</h2>
@@ -67,7 +106,11 @@
 
     </main>
 
+
+    <!-- Supabase -->
+
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+
     <script src="koibana.js"></script>
 
 </body>
