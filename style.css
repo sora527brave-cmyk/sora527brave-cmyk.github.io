@@ -257,19 +257,28 @@ nav a:hover {
 .koibana-rules {
     width: 700px;
     max-width: 100%;
+
     margin: 30px auto 60px;
     padding: 20px;
+
     border: 1px solid #39ff14;
+
+    /* 枠は中央 */
     text-align: center;
 }
 
 .koibana-rules p {
-    margin: 8px 0;
+    /* 文章の塊を中央に置く */
+    width: fit-content;
+    max-width: 100%;
+
+    margin: 8px auto;
     padding: 0;
+
     font-size: 16px;
     line-height: 1.8;
 
-    /* ルール本文を左揃え */
+    /* 文章自体は左揃え */
     text-align: left;
 }
 
@@ -442,7 +451,9 @@ nav a:hover {
     footer {
         width: 100%;
         max-width: none;
+
         margin: 0;
+
         padding-left: 16px;
         padding-right: 16px;
     }
@@ -454,8 +465,10 @@ nav a:hover {
 
     h1 {
         width: 100%;
+
         margin-top: 30px;
         margin-bottom: 30px;
+
         font-size: 40px;
         line-height: 1.4;
     }
@@ -467,15 +480,20 @@ nav a:hover {
 
     nav {
         width: 100%;
+
         margin-bottom: 50px;
+
         padding: 16px 0;
+
         line-height: 2.2;
     }
 
     nav a {
         margin: 0 7px;
+
         font-size: 17px;
         line-height: 2;
+
         letter-spacing: 0.03em;
     }
 
@@ -488,28 +506,37 @@ nav a:hover {
     .news,
     .profile {
         display: block;
+
         width: 100%;
         max-width: none;
+
         margin-left: 0;
         margin-right: 0;
     }
+
 
     .latest-diary h2,
     .news h2,
     .profile h2 {
         width: 100%;
+
         font-size: 27px;
         line-height: 1.5;
+
         margin-bottom: 25px;
+
         text-shadow: 0 0 2px #39ff14;
     }
+
 
     .latest-diary p,
     .news p,
     .profile p {
         width: 100%;
+
         margin-left: 0;
         margin-right: 0;
+
         font-size: 19px;
         line-height: 1.9;
     }
@@ -522,8 +549,10 @@ nav a:hover {
     #latest-diary {
         width: 100%;
         max-width: none;
+
         font-size: 19px;
         line-height: 1.9;
+
         overflow-wrap: anywhere;
         word-break: break-word;
     }
@@ -548,6 +577,7 @@ nav a:hover {
     .work-card {
         width: 100%;
         max-width: none;
+
         margin-left: 0;
         margin-right: 0;
     }
@@ -557,6 +587,7 @@ nav a:hover {
         width: 100%;
         max-width: 100%;
         height: auto;
+
         margin-left: 0;
         margin-right: 0;
     }
@@ -591,23 +622,45 @@ nav a:hover {
     #posts {
         width: 100%;
         max-width: none;
+
         margin-left: 0;
         margin-right: 0;
     }
 
+
+    /* =========================
+       ルール
+       ========================= */
+
     .koibana-rules {
         margin-top: 25px;
         margin-bottom: 50px;
+
         padding: 16px;
+
+        text-align: center;
     }
 
     .koibana-rules p {
+        /*
+         * 文章の塊は中央
+         * 文字は左揃え
+         */
+        width: fit-content;
+        max-width: 100%;
+
+        margin: 8px auto;
+
         font-size: 17px;
         line-height: 1.8;
 
-        /* スマホでも左揃え */
         text-align: left;
     }
+
+
+    /* =========================
+       投稿フォーム
+       ========================= */
 
     .koibana-form {
         margin-bottom: 65px;
@@ -616,8 +669,10 @@ nav a:hover {
     .koibana-form h2,
     .koibana-posts h2 {
         width: 100%;
+
         font-size: 27px;
         line-height: 1.5;
+
         margin-bottom: 25px;
     }
 
@@ -630,8 +685,10 @@ nav a:hover {
     .koibana-form textarea {
         width: 100%;
         max-width: 100%;
+
         margin-left: 0;
         margin-right: 0;
+
         font-size: 18px;
     }
 
@@ -643,16 +700,30 @@ nav a:hover {
         min-height: 190px;
     }
 
+
+    /* =========================
+       投稿ボタン
+       ========================= */
+
     #post-button {
         width: 100%;
+
         padding: 14px;
+
         font-size: 19px;
     }
+
+
+    /* =========================
+       投稿一覧
+       ========================= */
 
     #posts article {
         width: 100%;
         max-width: 100%;
+
         padding: 18px;
+
         overflow-wrap: anywhere;
         word-break: break-word;
     }
@@ -688,35 +759,6 @@ nav a:hover {
     a {
         overflow-wrap: anywhere;
         word-break: break-word;
-    }
-
-}
-
-/* ==================================================
-   恋バナ掲示板・ルール文章
-   スマホでは完全に左揃え
-   ================================================== */
-
-@media (max-width: 600px) {
-
-    .koibana-rules {
-        width: 100%;
-        margin-left: 0;
-        margin-right: 0;
-        padding: 16px;
-        text-align: left;
-    }
-
-    .koibana-rules p {
-        display: block;
-        width: 100%;
-        margin: 8px 0;
-        padding: 0;
-
-        font-size: 17px;
-        line-height: 1.8;
-
-        text-align: left !important;
     }
 
 }
