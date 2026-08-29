@@ -812,3 +812,88 @@ nav a:hover {
     }
 
 }
+
+/* =================================
+   スマホ表示を恋バナ掲示板に合わせる
+   ================================= */
+
+@media (max-width: 600px) {
+
+    header,
+    main,
+    footer {
+        width: 100%;
+        max-width: none;
+        padding-left: 22px;
+        padding-right: 22px;
+    }
+
+    p {
+        font-size: 18px;
+        line-height: 1.9;
+    }
+
+    h2 {
+        font-size: 25px;
+        line-height: 1.5;
+    }
+
+    .latest-diary,
+    .news,
+    .profile {
+        width: 100%;
+    }
+
+    .latest-diary h2,
+    .news h2,
+    .profile h2 {
+        font-size: 25px;
+    }
+
+    .news p,
+    .profile p {
+        font-size: 18px;
+        line-height: 1.9;
+    }
+
+    #latest-diary {
+        width: 100%;
+        font-size: 18px;
+        line-height: 1.9;
+    }
+
+    .work {
+        width: 100%;
+    }
+
+    .work img,
+    .work-image {
+        width: 100%;
+        max-width: 600px;
+        height: auto;
+    }
+
+    .works-grid {
+        width: 100%;
+    }
+
+    .work-card {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .work-card img,
+    .x-thumbnail {
+        width: 100%;
+        max-width: 280px;
+    }
+
+    .contact-link {
+        font-size: 18px;
+    }
+
+    nav a {
+        font-size: 17px;
+    }
+
+}
