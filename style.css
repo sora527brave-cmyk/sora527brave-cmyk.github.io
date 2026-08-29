@@ -691,3 +691,32 @@ nav a:hover {
     }
 
 }
+
+/* ==================================================
+   恋バナ掲示板・ルール文章
+   スマホでは完全に左揃え
+   ================================================== */
+
+@media (max-width: 600px) {
+
+    .koibana-rules {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+        padding: 16px;
+        text-align: left;
+    }
+
+    .koibana-rules p {
+        display: block;
+        width: 100%;
+        margin: 8px 0;
+        padding: 0;
+
+        font-size: 17px;
+        line-height: 1.8;
+
+        text-align: left !important;
+    }
+
+}
