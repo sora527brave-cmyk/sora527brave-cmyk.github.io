@@ -762,3 +762,73 @@ nav a:hover {
     }
 
 }
+
+/* ==================================================
+   日記
+   ================================================== */
+
+.diary-entry {
+    width: 700px;
+    max-width: 100%;
+    margin: 0 auto 80px;
+
+    text-align: left;
+}
+
+.diary-entry h2 {
+    margin-bottom: 30px;
+
+    font-size: 24px;
+    font-weight: normal;
+
+    text-align: left;
+}
+
+.diary-entry p {
+    width: 100%;
+    max-width: 650px;
+
+    margin: 0 auto;
+
+    font-size: 18px;
+    line-height: 2;
+
+    text-align: left;
+
+    overflow-wrap: break-word;
+    word-break: normal;
+}
+
+
+/* ==================================================
+   スマホの日記
+   ================================================== */
+
+@media (max-width: 600px) {
+
+    .diary-entry {
+        width: 100%;
+        max-width: none;
+
+        margin-bottom: 70px;
+    }
+
+    .diary-entry h2 {
+        font-size: 25px;
+        margin-bottom: 25px;
+    }
+
+    .diary-entry p {
+        width: 100%;
+        max-width: none;
+
+        font-size: 20px;
+        line-height: 2;
+
+        text-align: left;
+
+        overflow-wrap: break-word;
+        word-break: normal;
+    }
+
+}

@@ -8,64 +8,152 @@
 
     <title>Haut bas fragile</title>
 
-    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap"
+        rel="stylesheet"
+    >
 
     <link rel="stylesheet" href="style.css">
 </head>
 
+
 <body>
 
-    <!-- ナビゲーション -->
 
-     <header>
+    <!-- =========================
+         ナビゲーション
+         ========================= -->
+
+    <header>
         <h1>Haut bas fragile</h1>
     </header>
 
+
     <nav>
+
         <a href="index.html">HOME</a>
+
         <a href="diary.html">日記</a>
+
         <a href="works.html">作品</a>
+
         <a href="koibana.html">恋バナ掲示板</a>
+
         <a href="contact.html">CONTACT</a>
+
     </nav>
 
 
-    <!-- タイトル -->
+    <!-- =========================
+         ページタイトル
+         ========================= -->
 
     <header>
+
         <h1>恋バナ掲示板</h1>
+
     </header>
 
 
-    <!-- メイン -->
+    <!-- =========================
+         メイン
+         ========================= -->
 
     <main>
 
-        <!-- ルール -->
+
+        <!-- =========================
+             管理者ログイン
+             ?admin のときだけ表示
+             ========================= -->
+
+        <section
+            id="admin-login"
+            style="display: none;"
+        >
+
+            <h2>ADMIN</h2>
+
+
+            <input
+                type="email"
+                id="admin-email"
+                placeholder="メールアドレス"
+            >
+
+
+            <input
+                type="password"
+                id="admin-password"
+                placeholder="パスワード"
+            >
+
+
+            <button id="admin-login-button">
+                LOGIN
+            </button>
+
+
+            <button
+                id="admin-logout-button"
+                style="display: none;"
+            >
+                LOGOUT
+            </button>
+
+
+            <p id="admin-status"></p>
+
+        </section>
+
+
+        <!-- =========================
+             ルール
+             ========================= -->
 
         <section class="koibana-rules">
 
-    <p>・ここは恋バナを自由に書き込む掲示板です。</p>
 
-    <p>・名前はこのサイトだけのものにしてください。<br>
-    思いつかなければ「匿名」で構いません。</p>
-
-    <p>・誰かの名前を書くときはランダムなイニシャルや、<br>
-    代名詞などで特定されないようにしてください。</p>
-
-    <p>・攻撃的、加害的、過度に性的な表現は控え、<br>
-    見た人が気分を害さないように気を付けてください。</p>
-
-</section>
+            <p>
+                ・ここは恋バナを自由に書き込む掲示板です。
+            </p>
 
 
-        <!-- 投稿フォーム -->
+            <p>
+                ・名前はこのサイトだけのものにしてください。<br>
+                思いつかなければ「匿名」で構いません。
+            </p>
+
+
+            <p>
+                ・誰かの名前を書くときはランダムなイニシャルや、<br>
+                代名詞などで特定されないようにしてください。
+            </p>
+
+
+            <p>
+                ・攻撃的、加害的、過度に性的な表現は控え、<br>
+                見た人が気分を害さないように気を付けてください。
+            </p>
+
+
+        </section>
+
+
+        <!-- =========================
+             投稿フォーム
+             ========================= -->
 
         <section class="koibana-form">
 
+
             <h2>POST</h2>
 
-            <p>name</p>
+
+            <p>
+                name
+            </p>
+
 
             <input
                 type="text"
@@ -73,42 +161,61 @@
                 placeholder="匿名"
             >
 
-            <p>恋バナ</p>
+
+            <p>
+                恋バナ
+            </p>
+
 
             <textarea
                 id="content"
                 placeholder="ここに恋バナを書いてください"
             ></textarea>
 
+
             <br>
+
 
             <button id="post-button">
                 投稿する
             </button>
 
+
         </section>
 
 
-        <!-- 投稿一覧 -->
+        <!-- =========================
+             投稿一覧
+             ========================= -->
 
         <section class="koibana-posts">
 
+
             <h2>POSTS</h2>
+
 
             <div id="posts">
                 読み込み中...
             </div>
 
+
         </section>
+
 
     </main>
 
 
-    <!-- Supabase -->
+    <!-- =========================
+         Supabase
+         ========================= -->
 
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
+
+    <!-- 掲示板JavaScript -->
+
     <script src="koibana.js"></script>
+
 
 </body>
 
