@@ -54,6 +54,7 @@ const urlParams =
 const isAdminPage =
     urlParams.has("admin");
 
+
 if (adminLoginArea) {
 
     if (isAdminPage) {
@@ -80,7 +81,7 @@ async function getCurrentUser() {
 
     if (error) {
 
-        console.error(error);
+        console.error("ユーザー取得エラー:", error);
 
         return null;
 
@@ -126,6 +127,7 @@ async function adminLogin() {
 
     }
 
+
     const email =
         adminEmailInput.value.trim();
 
@@ -156,7 +158,7 @@ async function adminLogin() {
 
     if (error) {
 
-        console.error(error);
+        console.error("ログインエラー:", error);
 
         alert(
             "ログインできませんでした。"
@@ -203,37 +205,35 @@ async function adminLogin() {
 
     if (adminEmailInput) {
 
-        adminEmailInput.style.display =
-            "none";
+        adminEmailInput.style.display = "none";
 
     }
 
 
     if (adminPasswordInput) {
 
-        adminPasswordInput.style.display =
-            "none";
+        adminPasswordInput.style.display = "none";
 
     }
 
 
     if (adminLoginButton) {
 
-        adminLoginButton.style.display =
-            "none";
+        adminLoginButton.style.display = "none";
 
     }
 
 
     if (adminLogoutButton) {
 
-        adminLogoutButton.style.display =
-            "inline-block";
+        adminLogoutButton.style.display = "inline-block";
 
     }
 
 
     // 投稿一覧を更新
+    // 管理者なので削除ボタンが表示される
+
     await loadPosts();
 
 }
@@ -259,8 +259,7 @@ async function adminLogout() {
 
         adminEmailInput.value = "";
 
-        adminEmailInput.style.display =
-            "block";
+        adminEmailInput.style.display = "block";
 
     }
 
@@ -269,30 +268,28 @@ async function adminLogout() {
 
         adminPasswordInput.value = "";
 
-        adminPasswordInput.style.display =
-            "block";
+        adminPasswordInput.style.display = "block";
 
     }
 
 
     if (adminLoginButton) {
 
-        adminLoginButton.style.display =
-            "inline-block";
+        adminLoginButton.style.display = "inline-block";
 
     }
 
 
     if (adminLogoutButton) {
 
-        adminLogoutButton.style.display =
-            "none";
+        adminLogoutButton.style.display = "none";
 
     }
 
 
     // 投稿一覧を更新
     // これで削除ボタンも消える
+
     await loadPosts();
 
 }
@@ -332,7 +329,7 @@ async function loadPosts() {
         postsArea.textContent =
             "投稿を読み込めませんでした。";
 
-        console.error(error);
+        console.error("投稿読み込みエラー:", error);
 
         return;
 
@@ -374,19 +371,28 @@ async function loadPosts() {
             document.createElement("article");
 
 
+        // ==================================================
         // 日付
+        // ==================================================
+
         const date =
             new Date(post.created_at);
 
 
+        // ==================================================
         // 名前
+        // ==================================================
+
         const name =
             escapeHtml(
                 post.name || "匿名"
             );
 
 
+        // ==================================================
         // 本文
+        // ==================================================
+
         const content =
             escapeHtml(
                 post.content || ""
@@ -409,7 +415,7 @@ async function loadPosts() {
 
 
         // ==================================================
-        // 管理者の場合だけ削除ボタンを表示
+        // 管理者の場合だけ削除ボタンを作る
         // ==================================================
 
         if (admin) {
@@ -510,7 +516,7 @@ async function createPost() {
 
     if (error) {
 
-        console.error(error);
+        console.error("投稿エラー:", error);
 
         alert(
             "投稿できませんでした。"
@@ -593,7 +599,7 @@ async function deletePost(postId) {
 
     if (error) {
 
-        console.error(error);
+        console.error("削除エラー:", error);
 
         alert(
             "投稿を削除できませんでした。"
@@ -685,7 +691,9 @@ if (adminLogoutButton) {
 
 async function initialize() {
 
+    // ==================================================
     // 現在のログイン状態を確認
+    // ==================================================
 
     const user =
         await getCurrentUser();
