@@ -45,7 +45,7 @@ const postButton =
 
 
 // ==================================================
-// ?admin のときだけ管理者ログイン欄を表示
+// ?admin のときだけ管理者画面
 // ==================================================
 
 const urlParams =
@@ -54,6 +54,9 @@ const urlParams =
 const isAdminPage =
     urlParams.has("admin");
 
+
+// ?admin がない通常ページでは
+// 管理者ログイン欄を完全に隠す
 
 if (adminLoginArea) {
 
@@ -126,7 +129,6 @@ async function adminLogin() {
         return;
 
     }
-
 
     const email =
         adminEmailInput.value.trim();
@@ -205,34 +207,35 @@ async function adminLogin() {
 
     if (adminEmailInput) {
 
-        adminEmailInput.style.display = "none";
+        adminEmailInput.style.display =
+            "none";
 
     }
 
 
     if (adminPasswordInput) {
 
-        adminPasswordInput.style.display = "none";
+        adminPasswordInput.style.display =
+            "none";
 
     }
 
 
     if (adminLoginButton) {
 
-        adminLoginButton.style.display = "none";
+        adminLoginButton.style.display =
+            "none";
 
     }
 
 
     if (adminLogoutButton) {
 
-        adminLogoutButton.style.display = "inline-block";
+        adminLogoutButton.style.display =
+            "inline-block";
 
     }
 
-
-    // 投稿一覧を更新
-    // 管理者なので削除ボタンが表示される
 
     await loadPosts();
 
@@ -259,7 +262,8 @@ async function adminLogout() {
 
         adminEmailInput.value = "";
 
-        adminEmailInput.style.display = "block";
+        adminEmailInput.style.display =
+            "block";
 
     }
 
@@ -268,27 +272,27 @@ async function adminLogout() {
 
         adminPasswordInput.value = "";
 
-        adminPasswordInput.style.display = "block";
+        adminPasswordInput.style.display =
+            "block";
 
     }
 
 
     if (adminLoginButton) {
 
-        adminLoginButton.style.display = "inline-block";
+        adminLoginButton.style.display =
+            "inline-block";
 
     }
 
 
     if (adminLogoutButton) {
 
-        adminLogoutButton.style.display = "none";
+        adminLogoutButton.style.display =
+            "none";
 
     }
 
-
-    // 投稿一覧を更新
-    // これで削除ボタンも消える
 
     await loadPosts();
 
@@ -329,7 +333,10 @@ async function loadPosts() {
         postsArea.textContent =
             "投稿を読み込めませんでした。";
 
-        console.error("投稿読み込みエラー:", error);
+        console.error(
+            "投稿読み込みエラー:",
+            error
+        );
 
         return;
 
@@ -341,10 +348,14 @@ async function loadPosts() {
 
     // ==================================================
     // 管理者か確認
+    //
+    // 重要：
+    // ?admin が付いている場合だけ
+    // 管理者チェックを行う
     // ==================================================
 
     const admin =
-        await isAdmin();
+        isAdminPage && await isAdmin();
 
 
     // ==================================================
@@ -415,7 +426,9 @@ async function loadPosts() {
 
 
         // ==================================================
-        // 管理者の場合だけ削除ボタンを作る
+        // 管理者の場合だけ削除ボタンを表示
+        //
+        // 通常の koibana.html では絶対に作らない
         // ==================================================
 
         if (admin) {
@@ -516,7 +529,10 @@ async function createPost() {
 
     if (error) {
 
-        console.error("投稿エラー:", error);
+        console.error(
+            "投稿エラー:",
+            error
+        );
 
         alert(
             "投稿できませんでした。"
@@ -546,6 +562,21 @@ async function createPost() {
 // ==================================================
 
 async function deletePost(postId) {
+
+    // ==================================================
+    // ?admin がない場合は削除できない
+    // ==================================================
+
+    if (!isAdminPage) {
+
+        alert(
+            "管理者ページから操作してください。"
+        );
+
+        return;
+
+    }
+
 
     // ==================================================
     // 管理者か確認
@@ -599,7 +630,10 @@ async function deletePost(postId) {
 
     if (error) {
 
-        console.error("削除エラー:", error);
+        console.error(
+            "削除エラー:",
+            error
+        );
 
         alert(
             "投稿を削除できませんでした。"
@@ -691,19 +725,16 @@ if (adminLogoutButton) {
 
 async function initialize() {
 
-    // ==================================================
-    // 現在のログイン状態を確認
-    // ==================================================
-
     const user =
         await getCurrentUser();
 
 
     // ==================================================
-    // すでに管理者としてログインしている場合
+    // ?admin のページで、すでに管理者ログイン済み
     // ==================================================
 
     if (
+        isAdminPage &&
         user &&
         user.email &&
         user.email.toLowerCase() ===

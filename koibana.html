@@ -64,7 +64,8 @@
 
         <!-- =========================
              管理者ログイン
-             ?admin のときだけ表示
+             通常は非表示
+             ?admin のときだけJSで表示
              ========================= -->
 
         <section
@@ -79,6 +80,7 @@
                 type="email"
                 id="admin-email"
                 placeholder="メールアドレス"
+                autocomplete="username"
             >
 
 
@@ -86,15 +88,20 @@
                 type="password"
                 id="admin-password"
                 placeholder="パスワード"
+                autocomplete="current-password"
             >
 
 
-            <button id="admin-login-button">
+            <button
+                type="button"
+                id="admin-login-button"
+            >
                 LOGIN
             </button>
 
 
             <button
+                type="button"
                 id="admin-logout-button"
                 style="display: none;"
             >
@@ -112,7 +119,6 @@
              ========================= -->
 
         <section class="koibana-rules">
-
 
             <p>
                 ・ここは恋バナを自由に書き込む掲示板です。
@@ -136,7 +142,6 @@
                 見た人が気分を害さないように気を付けてください。
             </p>
 
-
         </section>
 
 
@@ -145,7 +150,6 @@
              ========================= -->
 
         <section class="koibana-form">
-
 
             <h2>POST</h2>
 
@@ -176,10 +180,12 @@
             <br>
 
 
-            <button id="post-button">
+            <button
+                type="button"
+                id="post-button"
+            >
                 投稿する
             </button>
-
 
         </section>
 
@@ -190,14 +196,12 @@
 
         <section class="koibana-posts">
 
-
             <h2>POSTS</h2>
 
 
             <div id="posts">
                 読み込み中...
             </div>
-
 
         </section>
 
@@ -212,7 +216,9 @@
     <script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
 
 
-    <!-- 掲示板JavaScript -->
+    <!-- =========================
+         掲示板JavaScript
+         ========================= -->
 
     <script src="koibana.js"></script>
 
